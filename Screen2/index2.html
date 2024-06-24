@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <!-- Hannahs part (Nav Bar) -->
+
+    <div class="containerNav">
+        <div class="left-container-nav">
+            <img src="images/hamburger-icon.png" class="hamburger-icon">
+            <img src="images/youtube logo.png">
+        </div>
+        <div class="center-container-nav">
+            <input class="inputstyle" type="Search" placeholder="Search">
+            <button style="width: 50px;">
+                <img src="images/animation.png">
+            </button>
+
+        </div>
+        <div class="right-container-nav">
+            <img src="images/video.png" style="height: 20px;">
+            <img src="images/notification.png">
+            <img src="images/A.png">
+        </div>
+    </div>
+
+    
+    <!-- Video and Comments -->
+    <div class="container">
+        <div class="left-container">
+            <div>
+                <video width="100%" height="500px" controls>
+                    <source src="images/chantel.mp4" type="video/mp4">
+                </video><br><br>
+            </div>
+            <div>
+                <p style="font-size: 20px; font-weight: bold; margin-top: 12px;">THESE TRENDS NEED TO D!E IN 2023
+                    ELSE,
+                    I’LL COME FOR YOU IN 2024!</p>
+            </div>
+            <div style="display: flex; margin-top: 10px;">
+                <img src="images/profile Image.png" alt="profile Image" style="width: 40px; height: 40px;">
+                <p style="font-size: 16px; font-weight: 600; margin-left: 10px; width: 200px;">Chantel Anyanwu <br><span
+                        style="font-size: 12px; color: #606060;">66.7k Subscribers</span>
+                </p>
+                <button class="join-button">Join</button>
+                <button class="subscribe-button">
+                    <img src="images/Notification.png" alt="notification bell"
+                        style="margin-right: 5px; height: 22px;">Subscribed
+                    <img src="images/arrow down.png" alt="" style="margin-left: 10px;">
+                </button>
+                <button class="like">
+                    <img src="images/Group 50.png" alt=""> 930
+                    <img src="images/vertical line.png" alt="" style="margin-left: 8px;">
+                </button>
+                <button class="dislike">
+                    <img src="images/Vector.png" alt="">
+                </button>
+                <button class="share-button">
+                    <img src="images/Share.png" alt="" style="position: relative; top: 3px; margin-right: 5px;">Share
+                </button>
+                <button class="download" id="OpenPopupBtn" onclick="OpenPopup()">
+                    <img src="images/Download.png" alt=""
+                        style="position: relative; top: 4px; margin-right: 5px;">Download
+                </button>
+                <button class="bullet-button" style="padding: 10px;"><img src="images/bullet.png" alt=""></button>
+            </div>
+            <div class="comments">
+                <div>
+                    <p style="font-size: 20px; font-weight: bolder; margin-top: 20px;">
+                        8 Comments<img src="images/hamburger.png" alt=""
+                            style="width: 20px; margin-left: 30px; position: absolute; top: 720px;">
+                        <span style="font-size: 14px; margin-left: 60px;">Sort by</span>
+                    </p>
+                </div>
+                <div style="margin-top: 30px; margin-bottom: 20px;">
+                    <img src="images/A.png" alt="profile picture" style="width: 40px;">
+                    <hr class="Add-Comments-hr">
+                    <p class="Add-Comments">Add a comment ...</p>
+                </div>
+
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/profile pic.png" alt="">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>
+                            <p class="actual-comment">
+                                <span class="commentersName">@CeeCee113 </span> <span class="commentDate">4 hours
+                                    ago</span> <br>
+                                You know what i love about you channel the fact you’re extremely intelligent,
+                                beautiful
+                                and accurate..... you have a great sense of humor .
+                            </p>
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/mypic 11.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/c.png" alt="">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div style="display: flex;">
+                            <p class="actual-comment">
+                                <span class="commentersName">@chayok12 </span> <span class="commentDate">1 month
+                                    ago</span> <br>
+                                Thanks a lot this videos help me you are awesome.
+                            </p>
+                            
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/mypic 11.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/lady2 1.png" alt="">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>
+                            <p class="actual-comment">
+                                <span class="commentersName">@Nelly_Kel </span> <span class="commentDate">2 months
+                                    ago</span> <br>
+                                Didn’t get components until now, very clear explanation, Thanks for sharing.
+                            </p>
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/mypic 11.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/man1jpg 1.png" alt="">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div style="display: flex;">
+                            <p class="actual-comment">
+                                <span class="commentersName">@GraveRave10 </span> <span class="commentDate">2 month
+                                    ago</span> <br>
+                                Very good tutorial! Very smart techniques for components. Thanks!!!
+                            </p>
+                            
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/mypic 11.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/T.png" alt="">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>
+                            <p class="actual-comment">
+                                <span class="commentersName">@Tinachen3021 </span> <span class="commentDate">3
+                                    months ago</span> <br>
+                                This was worthwhile to watch, although i still find very simple, i am committed to
+                                in learning this properly.
+                            </p>
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/mypic 11.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/man2 1.png" alt="">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>
+                            <p class="actual-comment">
+                                <span class="commentersName">@Moonxflair </span> <span class="commentDate">6 months
+                                    ago</span> <br>
+                                Thanks, a lot. Exactly what i was looking for.
+                            </p>
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/mypic 11.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/B.png" alt="">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div style="display: flex;">
+                            <p class="actual-comment">
+                                <span class="commentersName">@Bismuth_21 </span> <span class="commentDate">9 months
+                                    ago</span> <br>
+                                This is fantastic feature.
+                            </p>
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/mypic 11.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- video preveiws -->
+        <div class="right-container">
+            <div class="buttons-div">
+                <button class="All-button">All</button>
+                <button class="From-button">From Chantel Anyanwu</button>
+                <button class="ForYou-button">For you</button>
+                <button class="Comedy-button">Comedy</button>
+            </div>
+
+            <div class="advert">
+                <div>
+                    <img src="images/advert.png" alt="video preveiw" class="preveiw-image1">
+                </div>
+                <div class="words">
+                    <p class="title">6 - Month Online Course in Data Science.</p>
+                    <p class="subtitle">Data Scientists are in huge demand. Become one with the Online Course by UT
+                        Austin.<br>
+                    <p class="Subtitle2"><span class="sponsored">Sponsored</span> &middot; Great Learning</p>
+                </div>
+            </div>
+
+            <div class="one-video-preveiw">
+                <div>
+                    <img src="images/2.png" alt="video preveiw" class="preveiw-image">
+                </div>
+                <div class="words">
+                    <p class="title">Episode 56 (Aba edition) pop the balloon to eject least...</p>
+                    <p class="context">Nons_Miraj <br>3.4K views &middot; 16 minutes ago</p>
+                </div>
+            </div>
+            <hr class="line">
+
+            <div class="shorts-preveiw">
+                <div class="shorts-header">
+                    <img src="images/shorts logo.png" alt="" class="shorts-logo">
+                    <p class="logo-text">Shorts</p>
+                </div>
+                <div class="short-videos">
+                    <div class="shorts-video">
+                        <img src="images/3.png" alt="" class="shorts-image">
+                        <p class="title">Easy Desserts | Fruit Custard... </p>
+                        <p class="context">2.1M veiws</p>
+                    </div>
+                    <div class="shorts-video">
+                        <img src="images/4.png" alt="" class="shorts-image">
+                        <p class="title">When I force myself to make... </p>
+                        <p class="context">647K veiws</p>
+                    </div>
+                    <div class="shorts-video">
+                        <img src="images/5.png" alt="" class="shorts-image">
+                        <p class="title">The Secret to the perfect pudding </p>
+                        <p class="context">34M veiws</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+
+            <div class="video-preveiws">
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/9.png" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">NIGERIAN BOLE: ROASTED PLATAINS WITH PEPPERED...</p>
+                        <p class="context">NosagirlTV <br>66K veiws &middot; 3 years ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/6.png" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">10 THINGS AN ELEGANT WOMAN ‘MUST’ SPEND MONE...</p>
+                        <p class="context">Chantel Anyanwu <br>6.8K views &middot; 7 months ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/7.png" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">Tribe Tribute with Tania Cornelissen from Makoti</p>
+                        <p class="context">Self Sufficient Homesteading & Gard... <br>65K views &middot; 19 hours
+                            ago
+                        </p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/8.png" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">Worthy Of My Praise - Dunsin Oyekan ft @LawreneceOyor...</p>
+                        <p class="context">Dunsin Oyekan<br>1.7M views &middot; 2 weeks ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/11.png" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">Love Language|| Fights and many more....</p>
+                        <p class="context">Cynthia Obi-Uchendu<br>160k views &middot; 2 weeks ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/10.png" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">PRODUCTS I CAN’T LIVE WITHOUT & FAILS I’LL NEVER...</p>
+                        <p class="context">Chantel Anyanwu<br>5.9k views &middot; 4 months ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/hqdefault (1).webp" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">Gordon Ramsay JUST WANTS FOOD | Hell's Kitchen</p>
+                        <p class="context">Hell's Kitchen<br>2.1M views &middot; 3 years ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/hqdefault.webp" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">"My Eight Year Old Could Cook Better" | Kitchen Nightmares</p>
+                        <p class="context">Kitchen Nightmares<br>7.7M views &middot; 3 years ago</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Download Quality (Ayo) -->
+    <div class="overlay" id="overlay"></div>
+        <div class="download-quality" id="download-quality">
+            <div>
+                <p class="heading">Download Quality</p>
+                <input type="radio" id="standard" class="radio" name="standard/low">
+                <label for="standard" class="label">Standard(480p) <span class="size1">50 MB</span></label>
+
+                <input type="radio" id="standard" class="radio" name="standard/low">
+                <label for="standard" class="label">Low(144p) <span class="size2">20 MB</span></label>
+            </div>
+            <hr>
+            <div>
+                <img src="images/Screenshot 2024-06-04 175357.png" alt="logo" class="logo">
+                <p class="describe">For high quality unlimited downloads, ad-free <br>and background play, get Youtube
+                    Premium</p>
+                <input type="radio" id="standard" class="radio" name="full/high">
+                <label for="standard" class="label">Full HD(1080p) <span class="size1">125 MB</span></label>
+
+                <input type="radio" id="standard" class="radio" name="full/high">
+                <label for="standard" class="label">High(720p) <span class="size2">81 MB</span></label>
+            </div>
+            <hr>
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox" class="selector">
+                <label for="checkbox" class="label">Remember my settings for30 days </label>
+            </div>
+            <div class="buttons">
+                <button class="cancel-button" onclick="ClosePopup()">Cancel</button>
+                <button class="download-button">Download</button>
+            </div>
+        </div>
+</body>
+<script src="script2.js"></script>
+
+</html>
