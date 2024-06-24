@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+    <!-- Hannahs part (Nav Bar) -->
+
+    <div class="containerNav">
+        <div class="left-container-nav">
+            <img src="images/hamburger-icon.png" class="hamburger-icon">
+            <img src="images/youtube logo.png">
+        </div>
+        <div class="center-container-nav">
+            <input class="inputstyle" type="Search" placeholder="Search">
+            <button style="width: 50px;">
+                <img src="images/animation.png">
+            </button>
+
+        </div>
+        <div class="right-container-nav">
+            <img src="images/video.png" style="height: 20px;">
+            <img src="images/notification.png">
+            <img src="images/A.png">
+        </div>
+    </div>
+<small>Testing git </small>
+
+    <!-- Video and Comments -->
+    <div class="container">
+        <div class="left-container">
+            <div>
+                <video width="100%" height="500px" controls>
+                    <source src="images/chantel.mp4" type="video/mp4">
+                </video><br><br>
+            </div>
+            <div>
+                <p style="font-size: 20px; font-weight: bold; margin-top: 12px;">PICK A STRANGER (EPISODE 9) WOW! SEE HOW STRANGERS FROM THE STREETS COOK TO WIN 1M CASH PRICE ......</p>
+            </div>
+            <div style="display: flex; margin-top: 10px;">
+                <img src="images/profile 2.png" alt="profile Image" style="width: 40px; height: 40px;">
+                <p style="font-size: 16px; font-weight: 600; margin-left: 10px; width: 200px;">Ashmusy Tv <br><span
+                        style="font-size: 12px; color: #606060;">82.8k Subscribers</span>
+                </p>
+                <button class="join-button">Join</button>
+                <button class="subscribe-button">
+                    <img src="images/Notification.png" alt="notification bell"
+                        style="margin-right: 5px; height: 22px;">Subscribed
+                    <img src="images/arrow down.png" alt="" style="margin-left: 10px;">
+                </button>
+                <button class="like">
+                    <img src="images/Group 50.png" alt="">930
+                    <img src="images/vertical line.png" alt="" style="margin-left: 8px;">
+                </button>
+                <button class="dislike">
+                    <img src="images/Vector.png" alt="">
+                </button>
+                <button class="share-button">
+                    <img src="images/Share.png" alt="" style="position: relative; top: 3px; margin-right: 5px;">Share
+                </button>
+                <button class="download" id="OpenPopupBtn" onclick="OpenPopup()">
+                    <img src="images/Download.png" alt=""
+                        style="position: relative; top: 4px; margin-right: 5px;">Download
+                </button>
+                <button class="bullet-button" style="padding: 10px;"><img src="images/bullet.png" alt=""></button>
+            </div>
+
+
+            <div class="comments">
+                <div>
+                    <p style="font-size: 20px; font-weight: bolder; margin-top: 20px;">
+                        787 Comments<img src="images/hamburger.png" alt=""
+                            style="width: 20px; margin-left: 30px; position: absolute; top: 740px;">
+                        <span style="font-size: 14px; margin-left: 60px;">Sort by</span>
+                    </p>
+                </div>
+                <div style="margin-top: 30px; margin-bottom: 20px;">
+                    <img src="images/A.png" alt="profile picture" style="width: 40px;">
+                    <hr class="Add-Comments-hr">
+                    <p class="Add-Comments">Add a comment ...</p>
+                </div>
+
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/unnamed.jpg" alt="" class="Profile">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>
+                            <p class="actual-comment">
+                                <span class="commentersName">@mercysobotie </span> <span class="commentDate">2 months ago</span> <br>
+                                    Very interesting video, however Jesus Christ loves you, he is the way, truth and life, Jesus Christ is coming again, pls give your life to him .
+                            </p>
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/profile 2.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/channels4_profile.jpg" alt="" class="Profile">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div style="display: flex;">
+                            <p class="actual-comment">
+                                <span class="commentersName">@Mercyswanta </span> <span class="commentDate">2 months
+                                    ago</span> <br>
+                                    If you where charging your phone when watching please let gather here 
+                            </p>
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/profile 2.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/channels4_profile (1).jpg" alt="" class="Profile">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>
+                            <p class="actual-comment">
+                                <span class="commentersName">@OliveBanks-qy5ui </span> <span class="commentDate">2 months
+                                    ago</span> <br>
+                                    Who else is watching and reading comments.
+                            </p>
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/profile 2.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/channels4_profile.jpg" alt="" class="Profile">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div style="display: flex;">
+                            <p class="actual-comment">
+                                <span class="commentersName">@Mercyswanta </span> <span class="commentDate">2 months
+                                    ago</span> <br>
+                                    Who else thought the woman was going to win looking at her food.
+                            </p>
+                            
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/profile 2.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/unnamed (1).jpg" alt="" class="Profile">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>
+                            <p class="actual-comment">
+                                <span class="commentersName">@Dems413 </span> <span class="commentDate">2
+                                    months ago</span> <br>
+                                    Here from Nons Miraj’s post
+                            </p>
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/profile 2.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/B.png" alt="" class="Profile">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div>
+                            <p class="actual-comment">
+                                <span class="commentersName">@becky1998</span> <span class="commentDate">2 months
+                                    ago</span> <br>
+                                    Who else knew the man will win from the beginning.
+                            </p>
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/profile 2.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="individual-comment">
+                    <div>
+                        <img src="images/profile 2.png" alt="" class="Profile">
+                    </div>
+                    <div style="margin-left: 10px;">
+                        <div style="display: flex;">
+                            <p class="actual-comment">
+                                <span class="commentersName">@AshmusyTvv </span> <span class="commentDate">2 months
+                                    ago</span> <br>
+                                    Choose your winner before the game starts.. reply with your winner here 
+                                    If you got it right after watching till the end.. drop Acc details 
+                            </p>
+                           
+                        </div>
+                        <div class="like-Reply">
+                            <img src="images/like.png" alt="">
+                            <img src="images/profile 2.png" alt="" style="margin-left: 10px; width: 30px; height: 30px;">
+                            <p style="margin-left: 15px; font-size: 14px;">Reply</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- video preveiws -->
+        <div class="right-container">
+            <div class="buttons-div">
+                <button class="All-button">All</button>
+                <button class="From-button">From Chantel Anyanwu</button>
+                <button class="ForYou-button">For you</button>
+                <button class="Comedy-button">Comedy</button>
+            </div>
+
+            <div class="advert">
+                <div>
+                    <img src="images/advert.png" alt="video preveiw" class="preveiw-image1">
+                </div>
+                <div class="words">
+                    <p class="title">6 - Month Online Course in Data Science.</p>
+                    <p class="subtitle">Data Scientists are in huge demand. Become one with the Online Course by UT
+                        Austin.<br>
+                    <p class="Subtitle2"><span class="sponsored">Sponsored</span> &middot; Great Learning</p>
+                </div>
+            </div>
+
+            <div class="one-video-preveiw">
+                <div>
+                    <img src="images/1.webp" alt="video preveiw" class="preveiw-image">
+                </div>
+                <div class="words">
+                    <p class="title">THE COOKING BATTLE (EPISODE 10\10) BLINDFOLDE...</p>
+                    <p class="context">Ashmusy Tv <br>46K views &middot; 2 months ago</p>
+                </div>
+            </div>
+            <hr class="line">
+
+            <div class="shorts-preveiw">
+                <div class="shorts-header">
+                    <img src="images/shorts logo.png" alt="" class="shorts-logo">
+                    <p class="logo-text">Shorts</p>
+                </div>
+                <div class="short-videos">
+                    <div class="shorts-video">
+                        <img src="images/shorts1.webp" alt="" class="shorts-image">
+                        <p class="title">OKRA SOUP #youtubeshort... </p>
+                        <p class="context">75k veiws</p>
+                    </div>
+                    <div class="shorts-video">
+                        <img src="images/shorts2.webp" alt="" class="shorts-image">
+                        <p class="title">How i <br> overcooked thi... </p>
+                        <p class="context">1.1M veiws</p>
+                    </div>
+                    <div class="shorts-video">
+                        <img src="images/shorts3.webp" alt="" class="shorts-image">
+                        <p class="title">Homemade <br>"Honey"</p>
+                        <p class="context">2.2M veiws</p>
+                    </div>
+                </div>
+            </div>
+            <hr class="line">
+
+            <div class="video-preveiws">
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/2.webp" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">
+                            RICH HOUSEWIVES OF ANAMBRA | SEASON 2 |...</p>
+                        <p class="context">Steven Chuks<br>46K veiws &middot; 3 days ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/3.webp" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">COOK TO WIN THE SUGAR MOMMY!! The Cooking battle (...</p>
+                        <p class="context">Ashmusy Tv<br>194K views &middot; 3 months ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/4.webp" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">GO BROKE, GO HOME | A GAME OF DECEIT ft Yhemo Lee, Shan...</p>
+                        <p class="context">Frances Theodore<br>266K views &middot; 6 months
+                            ago
+                        </p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/5.webp" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">LETS PLAY - DEZA THE GREAT, OKAWA SHAZNAY, ATEWE...</p>
+                        <p class="context">RuthKadiri247<br>2.7M views &middot; 9 months ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/6.webp" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">
+                            INDIAN BURGER | VADA PAV | Indian Street Food Recipe....</p>
+                        <p class="context">Village Cooking Channel
+                            <br>5.9M views &middot; 12 days ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/7.webp" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">Nigerian king finds love! | Grilling with Shank Comics</p>
+                        <p class="context">Stand Out TV
+                            <br>439k views &middot; 3 weeks ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/8.webp" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title"> Hotel Owner REFUSES To Accept Hotel is Failing | Hotel...</p>
+                        <p class="context">Filth<br>733k views &middot; 2 years ago</p>
+                    </div>
+                </div>
+
+                <div class="one-video-preveiw">
+                    <div>
+                        <img src="images/9.webp" alt="video preveiw" class="preveiw-image">
+                    </div>
+                    <div class="words">
+                        <p class="title">GUESS THE ANDROID USER FT FISAYO FOSUDO</p>
+                        <p class="context">Cruise<br>30k views &middot; 2 weeks ago</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Download Quality (Ayo) -->
+    <div class="overlay" id="overlay"></div>
+        <div class="download-quality" id="download-quality">
+            <div>
+                <p class="heading">Download Quality</p>
+                <input type="radio" id="standard" class="radio" name="standard/low">
+                <label for="standard" class="label">Standard(480p) <span class="size1">50 MB</span></label>
+
+                <input type="radio" id="standard" class="radio" name="standard/low">
+                <label for="standard" class="label">Low(144p) <span class="size2">20 MB</span></label>
+            </div>
+            <hr>
+            <div>
+                <img src="images/Screenshot 2024-06-04 175357.png" alt="logo" class="logo">
+                <p class="describe">For high quality unlimited downloads, ad-free <br>and background play, get Youtube
+                    Premium</p>
+                <input type="radio" id="standard" class="radio" name="full/high">
+                <label for="standard" class="label">Full HD(1080p) <span class="size1">125 MB</span></label>
+
+                <input type="radio" id="standard" class="radio" name="full/high">
+                <label for="standard" class="label">High(720p) <span class="size2">81 MB</span></label>
+            </div>
+            <hr>
+            <div class="checkbox">
+                <input type="checkbox" id="checkbox" class="selector">
+                <label for="checkbox" class="label">Remember my settings for30 days </label>
+            </div>
+            <div class="buttons">
+                <button class="cancel-button" onclick="ClosePopup()">Cancel</button>
+                <button class="download-button">Download</button>
+            </div>
+        </div>
+</body>
+<script src="script3.js"></script>
+
+</html>
