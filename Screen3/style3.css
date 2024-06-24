@@ -1,0 +1,415 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+    font-family: Roboto, Arial, sans-serif;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-top: 90px;
+}
+
+
+/* NavBar */
+.containerNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 10px;
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+}
+
+.hamburger-icon {
+    width: 45px;
+    margin-right: 15px;
+    margin-left: 17px;
+}
+
+.hamburger-icon:hover {
+    background-color: #ededed;
+    color: #818181;
+    text-decoration-color: none;
+    border-radius: 30px;
+}
+
+.left-container-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+.left-containernav- img {
+    width: 40px;
+}
+
+.left-container-nav img + img {
+    width: 150px;
+}
+
+.center-container-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.center-container-nav input {
+    width: 500px;
+    padding: 15px 15px;
+    /* border-radius: 50px; */
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    border-right: none;
+    border: 1px solid #D7D7D7;
+}
+
+.center-container-nav button{
+    background-color: #ededed;
+    height: 48px;
+    border: none;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.center-container-nav img {
+    height: 25px;
+    width: 25px; 
+}
+
+.right-container-nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    margin-right: 30px;
+}
+
+.right-container-nav img {
+    height: 27px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+/* main video and comments */
+.left-container{
+    display: flex;
+    flex-direction: column;
+    padding-right: 40px;
+    padding-left: 60px;
+    width: 70%;
+}
+video{
+    border-radius: 20px;
+}
+.join-button{
+    background-color: #000000;
+    color: white;
+    padding: 0 15px 0 15px;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 20px;
+    height: 36px;
+}
+.subscribe-button{
+    background-color: #ededed;
+    font-size: 14px;
+    border: none;
+    border-radius: 25px;
+    margin-left: 20px;
+    padding: 0 20px 0 20px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+}
+.like{
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 6px 0 6px 20px;
+    height: 36px;
+    margin-left: 65px;
+    /* width: 100px; */
+    display: flex;
+    align-items: center;
+}
+.dislike{
+    border: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 6px 20px 6px 10px;
+    height: 36px;
+    margin-right: 12px;
+}
+.share-button{
+    background-color: #ededed;
+    border: none;
+    border-radius: 20px;
+    padding: 0 10px 0 10px;
+    font-size: 14px;
+    height: 36px;
+    width: 100px;
+    margin-right: 12px;
+    
+}
+.download{
+    border: none;
+    padding: 0 10px 0 10px;
+    border-radius: 25px;
+    font-size: 14px;
+    height: 36px;
+    width: 120px;
+    margin-right: 12px;
+}
+.bullet-button{
+    border-radius: 20px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    height: 36px;
+    background-color: #ededed;
+}
+
+
+/* comments */
+.individual-comment{
+    display: flex;
+    width: 70%;
+    margin-bottom: 25px;
+}
+.Add-Comments{
+    font-size: 14px; color: #606060; 
+    position: absolute; 
+    top: 800px; 
+    left: 110px;
+}
+.Add-Comments-hr{
+    color: #606060; 
+    position: absolute; 
+    top: 820px; 
+    left: 110px; 
+    width: 940px;
+}
+.Profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 25px;
+}
+.commentersName{
+    font-size: 13px; 
+    font-weight: bold;
+}
+.commentDate{
+    font-size: 12px;
+    color: #606060;
+}
+.actual-comment{
+    font-size: 14px;
+    line-height: 21px;
+}
+.emoji{
+    height: 20px;
+}
+.like-Reply{
+    display: flex; 
+    margin-top: 10px; 
+    align-items: center;
+}
+
+/* Video preveiws */
+.right-container{
+    width: 30%;
+    margin-right: 85px;
+    display: flex;
+    flex-direction: column;
+    width: 402px;
+}
+.buttons-div{
+    display: flex;   
+}
+.All-button, .From-button, .ForYou-button, .Comedy-button{
+    height: 32px;
+    padding: 0 12px ;
+    margin: 8px 8px 8px 0;
+    font-size: 14px;
+    background-color: #ededed;
+    border: none;
+    border-radius: 10px;
+}
+.All-button{
+    background-color: #000000;
+    color: white;
+}
+.advert{
+    width: 402px;
+    display: flex;
+}
+.preveiw-image1{
+    width: 168px;
+    height: 130px;
+    border-radius: 20px;
+}
+.words{
+    margin: 0 0 4px 4px;
+}
+.title{
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+}
+.subtitle, .Subtitle2, .context{
+    font-size: 13px;
+    color: #606060;
+    line-height: 18px;
+}
+.Subtitle2{
+    margin-top: 20px;
+}
+.sponsored{
+    font-weight: bold;
+    color: black;
+}
+.one-video-preveiw{
+    display: flex;
+    margin-top: 10px;
+}
+.preveiw-image{
+    width: 168px;
+    height: 94px;
+    border-radius: 10px;
+}
+.context{
+    margin-top: 5px;
+}
+.line{
+    margin: 20px 0 26px 0;
+    width: 400px;
+}
+.shorts-header{
+    display: flex;
+    margin-bottom: 20px;
+}
+.shorts-logo{
+    width: 18px;
+}
+.logo-text{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    margin-left: 10px;
+}
+.short-videos{
+    display: flex;
+    flex-direction: row;
+}
+.shorts-video{
+    width: 131px;
+    margin-right: 4px;
+}
+.shorts-image{
+    width: 131px;
+    height: 238px;
+    border-radius: 15px;
+}
+
+
+/* Download Quality */
+.overlay{
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.482);
+}
+.download-quality{
+    display: none;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 22%;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    position: relative;
+    left: 670px;
+    top: -1440px;
+}
+.size1{
+    margin-left: 120px;
+}
+.size2{
+    margin-left: 152px;
+}
+.radio, .heading, .describe{
+    margin-left: 20px;
+    margin-right: 7px;
+}
+.checkbox{
+    margin-right: 60px;
+}
+.selector{
+    margin-right: 7px;  
+}
+.heading{
+    font-size: 18px;
+    line-height: 60px;
+    font-weight: 300;
+}
+.label{
+    line-height: 40px;
+    color: #606060;
+}
+hr{
+    width: 80%;
+}
+.logo{
+    margin-bottom: 16px;
+    margin-left: 15px;
+}
+.describe{
+    line-height: 25px;
+    margin-bottom: 15px;
+}
+.buttons{
+    margin-left: 110px;
+    margin-top: 17px;
+    margin-bottom: 30px;
+}
+.cancel-button, .download-button{
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    padding: 3px 10px 3px 10px;
+    background-color: white;
+    font-weight: bold;
+}
+.cancel-button{
+    color: #000000;
+    
+}
+.cancel-button:active{
+    background-color: #000000;
+    color: white;
+}
+.download-button{
+    color: rgb(61, 102, 213);
+}
+.download-button:active{
+    background-color: rgb(61, 102, 213);
+    color: white;
+}
